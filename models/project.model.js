@@ -3,7 +3,10 @@ const mongoose = require('mongoose');
 const UserSchema = mongoose.Schema({
     name: String,
     description: String,
-    status:String,
+    startingDate: Date,
+    endingDate: Date,
+    currency: Number,
+    status: String,
 
 }, {
     timestamps: true
